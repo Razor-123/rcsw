@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 2px;
+}
+
+
+#my_room_name{
+    text-align: center;
+    margin: 4px;
+    font-family: 'Rubik', sans-serif;
+}
+table{
+    margin: 6px;
+    font-weight: bold;
+    font-size: 4vw;
+    margin-left:auto;margin-right:auto;
+}
+@media screen and (min-width: 600px) {
+    table {
+       font-size: 25px;
+    }
+}
+.usernames{
+    color: red;
+    font-family: 'Rubik', sans-serif;
+}
+.userscores{
+    color:darkblue;
+}
+th, td {
+    padding: 2px;
+}
+
+img {
+    height: 20vw;
+    width: 100%;
+}
+.other_image{
+    display: flex;
+    
+}
+.image_container {
+    margin: auto;
+    position: relative;
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    padding: 2px;
+    border-width: 5px;
+}
+.user_name{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    word-wrap: break-word;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: 10px;
+}
+#message {
+    text-align: center;
+    margin: 10px;
+}
+#result {
+    text-align: center;
+    margin: 10px;
+}
+.any_message{
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+
+                               /* message popup css */
+
+/* The actual popup */
+.image_container .popuptext {
+    visibility:visible;
+    font-size: smaller;
+    width: 150%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -75%;
+    word-wrap: break-word;
+  }
+
+  /* image_container arrow */
+.image_container .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px; 
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+    
+/*////////////////////////////////* message box //////////////////////////////*/
+.group 			  { 
+    display: flex;
+position:relative; 
+margin-top: 30px;
+justify-content: center;
+}
+input 				{
+font-size:12px;
+padding:10px 10px 10px 5px;
+display:block;
+width:300px;
+border:none;
+border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+label 				 {
+color:#999; 
+font-size:14px;
+font-weight:normal;
+position:absolute;
+pointer-events:none;
+top:10px;
+transition:0.2s ease all; 
+-moz-transition:0.2s ease all; 
+-webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+top:-20px;
+font-size:12px;
+color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+content:'';
+height:2px; 
+width:0;
+bottom:1px; 
+position:absolute;
+background:#5264AE; 
+transition:0.2s ease all; 
+-moz-transition:0.2s ease all; 
+-webkit-transition:0.2s ease all;
+}
+.bar:before {
+left:50%;
+}
+.bar:after {
+right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+position:absolute;
+height:60%; 
+width:100px; 
+top:25%; 
+pointer-events:none;
+opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+-webkit-animation:inputHighlighter 0.3s ease;
+-moz-animation:inputHighlighter 0.3s ease;
+animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:#5264AE; }
+to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#5264AE; }
+to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#5264AE; }
+to 	{ width:0; background:transparent; }
+}
+
+
+.resultdiv{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 10px;
+    margin-top: 40px;
+
+}
+.winnerh1{
+    color: #F778A1;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.winnername{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 72, 0);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.winnerscore{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.gobackbutton {
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 10px;
+    letter-spacing: 2px;
+    position: relative;
+    background-color: #16a085;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 2px 7px #193047;
+    border-radius: 4px;
+  }
+  
+  .gobackbutton:hover {
+    background: #fff;
+    box-shadow: 0px 1px 5px 2px #1abc9c;
+    color: #000;
+  }
+  
+  .gobackbutton:after {
+    content: "";
+    background: #1abc9c;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .gobackbutton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  
+  .gobackbutton:focus { outline:0; }
+  .leftperson{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .ileft{
+      text-align: center;
+      font-size: 40px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+  }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCSW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <p id="my_room_name">Room : room1</p>
+        <div class="score_card">
+            <table class='table'>
+                <!-- <tr><td class="usernames">shaleen</td><td class="userscores">:12000</td></tr>
+                <tr><td class="usernames">fdsg</td><td class="userscores">:12000</td></tr>
+                <tr><td class="usernames">sasdfg</td><td class="userscores">:12000</td></tr>
+                <tr><td class="usernames">trsdfd sghfghk</td><td class="userscores">:12000</td></tr> -->
+            </table>
+        </div>
+        <p class="any_message">Waiting for more people to join</p>
+        <br>
+        <div class="container">
+            <div class="first_line">
+                <div class="my_image">
+                    <!-- <div class="image_container">
+                        
+                                          message by me
+                            <span class="popuptext" id="myPopup">naam pe clck karo</span>
+                        
+                        <img class="image" src="img_avatar.png" alt="img">
+                        <button class="user_name">trsdfd sghfghk</button>
+                    </div> -->
+                </div>
+            </div>
+            <br><br><br>
+            <div class="second_line">
+                <div class="other_image">
+                    <!-- <div class="image_container">
+                        message by other users
+                        <span class="popuptext" id="myPopup">naam pesdfcgvbhj clck karo</span>
+                        
+                        <img class="image" src="king.jpg" alt="img">
+                        <button class="user_name">Bantai</button>
+                    </div> -->
+                    <!-- <div class="image_container">
+                        message by other users
+                        <span class="popuptext" id="myPopup">naam pesdfcgvbhj sdfasd asdfasdf clck karo</span>
+                        
+                        <img class="image" src="thief.jpg" alt="img">
+                        <button class="user_name">Bantai</button>
+                    </div> -->
+                    <!-- <div class="image_container">
+                        message by other users
+                        <span class="popuptext" id="myPopup">naam pesdfcgvbhj sdfasd asdfasdf clck karo</span>
+                        
+                        <img class="image" src="wazir.jpg" alt="img">
+                        <button class="user_name">Bantai</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="group">      
+                <input maxlength="90" id="message_input" type="text" required>
+                <span class="highlight"></span>
+                <label>Type Message..</label>
+            <button type="submit" onclick="sendmessage()" value="Submit">Send </button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js"
+        integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
