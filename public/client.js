@@ -7,7 +7,7 @@ const other_image =  document.querySelector('.other_image');
 const table = document.querySelector('.table');
 let myimgsrc = '';
 let clickable=true;
-let rounds = 4;
+let rounds = 20;
 
 
 const images = ['king.jpg','soldier.jpg','thief.jpg','wazir.jpg'];
