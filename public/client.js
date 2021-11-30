@@ -5,6 +5,7 @@ let myscore=0;
 const my_image = document.querySelector('.my_image');
 const other_image =  document.querySelector('.other_image');
 const table = document.querySelector('.table');
+const myroomname = document.querySelector('.my_room_name')
 let myimgsrc = '';
 let clickable=true;
 let rounds = 20;
@@ -15,7 +16,7 @@ const { name, roomname } = Qs.parse(location.search, {
     ignoreQueryPrefix: true,
 });
 
-
+myroomname.innerHTML = `Room: ${roomname}`;
 socket.emit('new_user_joinded',{name,roomname});
 socket.on('started',()=>{
     started=true;
